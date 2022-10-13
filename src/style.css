@@ -278,11 +278,11 @@ input.checkbox:before {
 input.checkbox:after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0;
+  top: -2,5px;
+  left: -1;
   z-index: 1;
-  width: 1.2em;
-  height: 1.2em;
+  width: 1.1em;
+  height: 1.1em;
   border: 1px solid #fff;
   -webkit-transition: .4s ease-in-out;
   -moz-transition: .4s ease-in-out;

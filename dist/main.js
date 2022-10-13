@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{console.log("content loaded"),document.getElementById("username").addEventListener("input",(()=>{let e=document.getElementById("username");console.log(e.textContent),parseInt(e.innerText)<=5&&console.log("tul rovid a jelszo")}))}))})();
