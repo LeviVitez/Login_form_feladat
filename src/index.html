@@ -13,6 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
 <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="/src/index.js"></script>
 <!-- //Custom Theme files -->
 <!-- web font -->
 <link href="//petriklajosszki.sharepoint.com///fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -25,9 +26,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 				<form action="#" method="post">
-					<input class="text" type="text" name="Username" placeholder="Felhasználónév" maxlength="30" minlength="6" pattern="[a-zA-Z0-9!@#$%^*_|]{6,25}" id="username" required="">
-					<input class="text email" type="email" name="email" placeholder="Email" required="">
-					<input class="text" type="password" name="password" placeholder="Jelszó" required="">
+					<input class="text" type="text" name="Username" id="username" placeholder="Felhasználó név" required="">
+					<output id="userErr"></output>
+					<input class="text email" type="email" name="email" id="email" placeholder="E-mail" required="">
+					<output id="emailErr"></output>
+					<input class="text" type="password" name="password" id="password" placeholder="Jelszó" required="">
+					<output id="passErr"></output>
+					<input class="text" type="password" name="repassword" id="repassword" placeholder="Jelszó mégegyszer" required="">
+					<output id="repassErr"></output>
 					<div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">
@@ -35,7 +41,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</label>
 						<div class="clear"> </div>
 					</div>
-					<input type="submit" value="REGISZTRÁCIÓ">
+					<input type="submit" id="regist" value="REGISZTRÁCIÓ">
 				</form>
 				<p>Van már fiókja? <a href="#"> Bejelentkezés!</a></p>
 			</div>
@@ -60,6 +66,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</ul>
 	</div>
 	<!-- //main -->
-	<script src="/src/index.js"></script>
 </body>
 </html>
